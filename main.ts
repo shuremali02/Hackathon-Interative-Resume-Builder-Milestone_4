@@ -223,4 +223,10 @@ document.addEventListener("DOMContentLoaded", () => {
             saveChanges(target.id as keyof ResumeData, target.innerText);
         });
     });
-});
+});function Print() {
+    window.print()
+    
+}
+document.querySelector(".dawnload")?.addEventListener("click",()=>{
+     Print()
+    })
