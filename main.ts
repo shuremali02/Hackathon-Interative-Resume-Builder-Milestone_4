@@ -223,7 +223,10 @@ document.addEventListener("DOMContentLoaded", () => {
             saveChanges(target.id as keyof ResumeData, target.innerText);
         });
     });
-});function Print() {
+});
+
+    // Optional: Call saveChanges() to update resumeData with new values
+function Print() {
     window.print()
     
 }

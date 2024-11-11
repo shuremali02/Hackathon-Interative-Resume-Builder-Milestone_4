@@ -104,8 +104,8 @@ input[type="file"] {
 }
 
 .profile-image {
-  width: 120px;
-  height: 180px;
+  width: 70px;
+  height: 220px;
   border-radius: 50%;
   border: 3px solid #6496d8;
   object-fit: cover;
@@ -114,20 +114,20 @@ input[type="file"] {
 
 @media (max-width: 768px) {
   .profile-image {
-    width: 100px; /* Smaller size for mobile screens */
-    height: 100px;
+    width: 50px; /* Smaller size for mobile screens */
+    height: 50px;
   }
 }
 
 
 /* Editable content */
 [contenteditable="true"]:focus {
-  outline: 2px solid #500707;
+  outline: 2px solid #6496d8;
 }
 
 /* Download button */
 .download-btn, .btn, .btn2 {
-  background-color: #500208;
+  background-color: #6496d8;
   color: white;
   padding: 10px 15px;
   border: none;
@@ -165,5 +165,27 @@ input[type="file"] {
   .profile-image {
     width: 100px;
     height: 100px;
+  }
+  
+}
+/* Print styles */
+@media print {
+  /* Hide everything except the generated resume */
+  #resume-form * {
+    display: none;
+  }
+  
+  /* Display only the resume section */
+  #display-resume {
+    display: block;
+    width: 100%; /* Ensure it takes the full page width */
+    border: none;
+    box-shadow: none;
+  }
+
+  /* Optional: Adjust margin and padding for printing */
+  #display-resume {
+    padding: 0;
+    margin: 0;
   }
 }

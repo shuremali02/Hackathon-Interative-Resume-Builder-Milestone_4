@@ -192,6 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+// Optional: Call saveChanges() to update resumeData with new values
 function Print() {
     window.print();
 }
