@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #3c52ce;
+  background-color: #6b79c7;
   margin: 0;
   padding: 20px;
   line-height: 1.6;
@@ -15,7 +15,7 @@ body {
 header.head {
   max-width: 600px;
   text-align: center;
-  font-size: 24px;
+  font-size: 38px;
   color: #ccc;
   margin-bottom: 20px;
 }
@@ -158,13 +158,13 @@ input[type="file"] {
     grid-template-columns: 1fr;
   }
 
-  .resume-section > * {
+  /* .resume-section > * {
     flex: 1 1 100%;
-  }
+  } */
 
   .profile-image {
     width: 100px;
-    height: 100px;
+    height: 200px;
   }
   
 }
@@ -178,10 +178,24 @@ input[type="file"] {
   /* Display only the resume section */
   #display-resume {
     display: block;
-    width: 100%; /* Ensure it takes the full page width */
+   /* Ensure it takes the full page width */
     border: none;
     box-shadow: none;
   }
+.profile-image {
+  display: block;
+  margin: 0 auto 15px auto;
+  width: 120px;
+  height: 240px;
+  border-radius: 50%;
+  border: 3px solid #4caf50;
+  object-fit: cover;
+}
+.head , .download-btn  {
+  display: none;
+
+
+}
 
   /* Optional: Adjust margin and padding for printing */
   #display-resume {
